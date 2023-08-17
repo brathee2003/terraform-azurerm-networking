@@ -1,3 +1,6 @@
+provider "azurerm" {
+  features {}
+}
 resource "azurerm_resource_group" "module" {
   name     = "${local.module_name}-rg"
   location = var.location
