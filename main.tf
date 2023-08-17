@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "module" {
   location = var.location
   tags = {
     environment = "dev"
-    version     = "v1.0.0"
+    version     = "v0.12.0"
   }
 }
 
@@ -14,7 +14,6 @@ resource "azurerm_virtual_network" "module" {
   resource_group_name = azurerm_resource_group.module.name
   tags = {
     environment = "dev"
-    moduleVersion = "dummy"
   }
 }
 
